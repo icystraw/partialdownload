@@ -1,0 +1,122 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 309, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Portable HTTP Download Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "URL",IDC_STATIC,7,10,14,8
+    LTEXT           "Save To",IDC_STATIC,7,27,27,8
+    LTEXT           "Start Position (zero based index, 0 if left empty)",IDC_STATIC,7,44,155,8
+    LTEXT           "End Position (zero based index, leave empty for end of file)",IDC_STATIC,7,61,191,8
+    LTEXT           "Username",IDC_STATIC,7,78,33,8
+    LTEXT           "Password",IDC_STATIC,156,78,32,8
+    LTEXT           "Maximum Download Thread (1-10)",IDC_STATIC,7,97,110,8
+    EDITTEXT        TXTURL,68,7,234,14,ES_AUTOHSCROLL
+    EDITTEXT        TXTDOWNLOADFOLDER,68,24,182,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse...",IDC_BROWSE,252,24,50,14
+    EDITTEXT        TXTSTART,205,41,97,14,ES_AUTOHSCROLL
+    EDITTEXT        TXTEND,205,58,97,14,ES_AUTOHSCROLL
+    EDITTEXT        TXTUSERNAME,53,75,87,14,ES_AUTOHSCROLL
+    EDITTEXT        TXTPASSWORD,205,75,97,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        TXTNODOWNLOADER,131,95,44,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Start",IDSTART,155,184,50,14
+    PUSHBUTTON      "Pause/Resume",IDPAUSE,211,184,91,14
+    EDITTEXT        IDC_STATUS,7,113,295,64,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAINDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
